@@ -36,4 +36,10 @@ public class RomanNumeralTestWithBeforeEach {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void numberWithMultipleSubtractiveNotation() {
+        int result = roman.convert("CMXLIV");
+        Assertions.assertEquals(944, result);
+    }
 }
